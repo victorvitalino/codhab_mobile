@@ -1,0 +1,24 @@
+<ion-view view-title="Login">
+  <ion-content>
+    <img class="full-image" src="img/logo.png">
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">CPF</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Senha</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+      </div>
+      <div class="padding">
+        <a class="button button-block button-energized" ui-sref="dashboard">Logar</a>
+    </div>
+  </form>
+    <div class="list">
+      <a class="item" ui-sref="reset_password">Esqueceu a Senha?</a>
+      <a class="item" ui-sref="no_register">Não possui cadastro?</a>
+    </div>
+  </ion-content>
+</ion-view>
